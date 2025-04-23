@@ -1,8 +1,8 @@
 import { Product } from '@/domain/entities/product'
-import { ProductMockRepository } from '@/infrastructure/ProductMockRepository'
+import { ProductRepository } from '@/repositories/ProductRepository'
 
 export class GetAllProducts {
-  constructor(private repository: ProductMockRepository) {}
+  constructor(private repository: ProductRepository) {}
 
   async execute(): Promise<Product[]> {
     return await this.repository.getAll()
