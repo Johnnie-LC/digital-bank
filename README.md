@@ -52,7 +52,8 @@ src/
 │
 │   ├── HOCs/                   # Higher-Order Components (HOC) para lógica reutilizable
 │       └── withLoading.tsx     # HOC que maneja el estado de carga y errores
-│
+├── repositories/               # Lógica de acceso a los datos, incluyendo interfaces y repositorios para interactuar con las fuentes de datos
+│   └── ProductRepository.ts/   # Repositorio que maneja la interacción con los datos del producto (ej. API, base de datos, mock)
 └── styles/                     # Carpeta para los estilos globales de la aplicación
     └── globals.css             # Archivo CSS global con los estilos básicos y generales
 

@@ -1,5 +1,6 @@
 import { Product } from '@/domain/entities/product'
 import { ProductCategory } from '@/domain/enums/ProductCategory'
+import { ProductRepository } from '@/repositories/ProductRepository'
 
 const mockProducts: Product[] = [
   {
@@ -100,7 +101,7 @@ const mockProducts: Product[] = [
   },
 ]
 
-export class ProductMockRepository {
+export class ProductMockRepository implements ProductRepository {
   async getAll(): Promise<Product[]> {
     return mockProducts
   }
